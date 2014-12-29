@@ -24,4 +24,11 @@
 
     <style name="ButtonBarButton" />
     <!-- End FullScreen Theme -->
+
+    <!-- Begin FAB Style -->
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- End FAB Style -->
 </resources>

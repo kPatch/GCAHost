@@ -13,6 +13,14 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chooser);
 
+        findViewById(R.id.button_fab_sample).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FabActivity.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.button_list_sample).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

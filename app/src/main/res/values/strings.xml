@@ -5,8 +5,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <!--FullScreen Dummy Content -->
+    <!-- FullScreen Dummy Content -->
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- Login Dummy Content -->
+    <string name="title_section1">Title 1</string>
+    <string name="title_section2">Title 2</string>
+    <string name="title_section3">Title 3</string>
+    <string name="title_activity_fab">FabActivity</string>
 
 </resources>
