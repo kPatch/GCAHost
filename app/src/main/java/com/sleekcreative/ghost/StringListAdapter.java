@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class StringListAdapter extends RecyclerView.Adapter<StringListAdapter.ViewHolder> {
 
@@ -20,13 +21,20 @@ public class StringListAdapter extends RecyclerView.Adapter<StringListAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_string, parent, false);
+        Random random = new Random();
+        int ran = random.nextInt(10);
+        View view;
+        if( (ran % 2) == 1)
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed, parent, false);
+        else {
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record, parent, false);
+        }
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.textView.setText(data.get(position));
+        //holder.textView.setText(data.get(position));
     }
 
     @Override

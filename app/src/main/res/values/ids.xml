@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Begin item_feed ids -->
+    <item name="button1" type="id"/>
+    <!-- End item_feed_ids -->
+
+    <!-- Begin item_post ids -->
+    <item name="image_post" type="id"/>
+    <!-- End item_post ids-->
+
+    <!-- -->
+
+    <!-- -->
+    <!-- -->
+
+
+
+</resources>

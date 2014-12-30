@@ -67,7 +67,7 @@ public abstract class BaseActivity extends Activity implements SwipeRefreshLayou
 
         mRecycler.setRefreshListener(this);
         mRecycler.setRefreshingColorResources(android.R.color.holo_orange_light, android.R.color.holo_blue_light, android.R.color.holo_green_light, android.R.color.holo_red_light);
-        mRecycler.setupMoreListener(this, 1);
+        //mRecycler.setupMoreListener(this, 1);
     }
 
     protected abstract boolean isSwipeToDismissEnabled();
@@ -89,7 +89,6 @@ public abstract class BaseActivity extends Activity implements SwipeRefreshLayou
     @Override
     public void onMoreAsked(int numberOfItems, int numberBeforeMore, int currentItemPos) {
         Toast.makeText(this, "More", Toast.LENGTH_LONG).show();
-
         mAdapter.add("More asked, more served");
     }
 

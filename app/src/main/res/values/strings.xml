@@ -17,4 +17,14 @@
     <string name="title_section3">Title 3</string>
     <string name="title_activity_fab">FabActivity</string>
 
+    <!-- Compose View Dummy Content -->
+    <string name="type_msg">Type message</string>
+
+    <!-- New Post Dummy Content -->
+    <string name="to">To:</string>
+    <string name="choose_project">Choose Project:</string>
+    <string name="publc">Public</string>
+    <string name="a_post">Hey it\'s Tuesday December 30th, 2014, 8AM. What the fuck am I doing awake. Shit I just realized there\'s 15 days left until school starts</string>
+    <string name="a_post_2">Hey it\'s Tuesday December 30th, 2014, 8AM. What the fuck am I doing awake. Shit I just realized</string>
+
 </resources>
