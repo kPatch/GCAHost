@@ -13,6 +13,7 @@ import java.util.Random;
 public class StringListAdapter extends RecyclerView.Adapter<StringListAdapter.ViewHolder> {
 
     public ArrayList<String> data;
+    Random random = new Random();
 
     public StringListAdapter(ArrayList<String> data) {
         this.data = data;
@@ -21,13 +22,55 @@ public class StringListAdapter extends RecyclerView.Adapter<StringListAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Random random = new Random();
-        int ran = random.nextInt(10);
+        int ran = random.nextInt(13);
         View view;
-        if( (ran % 2) == 1)
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed, parent, false);
-        else {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record, parent, false);
+
+        switch (ran){
+            case 0:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed_v0, parent, false);
+                break;
+            case 1:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed_v1, parent, false);
+                break;
+            case 2:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record_alone_v0, parent, false);
+                break;
+            case 3:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record_alone_v1, parent, false);
+                break;
+            case 4:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record_v0, parent, false);
+                break;
+            case 5:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_record_v1, parent, false);
+                break;
+            case 6:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_text_v0, parent, false);
+                break;
+            case 7:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_text_v1, parent, false);
+                break;
+            case 8:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_text_v2, parent, false);
+                break;
+            case 9:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_text_v3, parent, false);
+                break;
+            case 10:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_v0, parent, false);
+                break;
+            case 11:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post_v1, parent, false);
+                break;
+            case 12:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed_v2, parent, false);
+                break;
+            case 13:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed_v3, parent, false);
+                break;
+            default:
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_feed_v1, parent, false);
+                break;
         }
         return new ViewHolder(view);
     }

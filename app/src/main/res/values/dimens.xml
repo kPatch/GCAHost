@@ -37,4 +37,8 @@
     <dimen name="txt_18sp">18sp</dimen>
     <dimen name="txt_20sp">20sp</dimen>
     <!-- End ChatItem Dimens -->
+
+    <!-- Begin Text Sizes -->
+    <!-- End Text Sizes -->
+
 </resources>

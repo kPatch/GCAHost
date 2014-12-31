@@ -5,7 +5,6 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="125dp"
-    android:layout_margin="5dp"
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="5dp">
 
@@ -19,24 +18,20 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-
             android:layout_marginLeft="@dimen/feed_item_margin"
             android:layout_marginRight="@dimen/feed_item_margin"
-            android:layout_marginTop="@dimen/feed_item_margin"
-            android:background="@drawable/bg_parent_rounded_corner"
+            android:layout_marginTop="@dimen/pad_10dp"
             android:orientation="vertical"
-            android:paddingTop="@dimen/feed_item_padding_top_bottom"
             android:layout_gravity="left"
             android:layout_weight="2">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
                 android:text="This is just dummy content.."
                 android:paddingRight="@dimen/pad_10dp"
                 android:textSize="20dp"
-                android:layout_weight="5"/>
+                android:layout_weight="4"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -53,22 +48,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="@dimen/pad_10dp"
+                    android:textSize="@dimen/txt_12sp"
                     android:text="De_Boss1"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="@dimen/pad_10dp"
-                    android:text="20 hours ago"/>
+                    android:textSize="@dimen/txt_12sp"
+                    android:text="20 hours"/>
             </LinearLayout>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/post_image"
-            android:layout_width="125dp"
+            android:layout_width="150dp"
             android:layout_height="125dp"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
             android:layout_gravity="right"
-            android:src="@drawable/group2"
+            android:src="@drawable/photo_buddha"
             android:layout_weight="1"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>

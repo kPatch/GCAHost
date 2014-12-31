@@ -4,9 +4,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="125dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content"
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="5dp">
 
@@ -66,22 +64,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="@dimen/pad_10dp"
+                    android:textSize="@dimen/txt_12sp"
                     android:text="De_Boss1"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="@dimen/pad_10dp"
+                    android:textSize="@dimen/txt_12sp"
                     android:text="20 hours ago"/>
             </LinearLayout>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/post_image"
-            android:layout_width="125dp"
+            android:layout_width="150dp"
             android:layout_height="125dp"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
             android:layout_gravity="right"
-            android:src="@drawable/group2"
+            android:src="@drawable/photo_deer"
             android:layout_weight="1"/>
     </LinearLayout>
 </android.support.v7.widget.CardView>

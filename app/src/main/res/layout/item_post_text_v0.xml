@@ -5,7 +5,6 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="125dp"
-    android:layout_margin="5dp"
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="5dp">
 
@@ -13,15 +12,12 @@
     <!-- android:layout_marginTop="@dimen/feed_item_margin"
          android:paddingBottom="@dimen/feed_item_padding_top_bottom"-->
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/feed_item_margin"
         android:layout_marginRight="@dimen/feed_item_margin"
-        android:background="@drawable/bg_parent_rounded_corner"
+        android:layout_marginTop="@dimen/pad_10dp"
         android:orientation="vertical"
-
-        android:paddingTop="@dimen/feed_item_padding_top_bottom"
         android:layout_gravity="left"
         android:layout_weight="2">
 
@@ -51,11 +47,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/pad_10dp"
+                android:textSize="@dimen/txt_12sp"
                 android:text="De_Boss1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/pad_10dp"
+                android:textSize="@dimen/txt_12sp"
                 android:text="20 hours ago"/>
         </LinearLayout>
     </LinearLayout>
